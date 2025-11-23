@@ -12,7 +12,7 @@ namespace Tyuiu.VolkovNS.Sprint5.Task7.V8.Lib
             bool fileExists = fileinfo.Exists;
             if (fileExists)
                 File.Delete(path1);
-            string res="";
+            StringBuilder res = new StringBuilder();
             using (StreamReader reader = new StreamReader(path, Encoding.UTF8))
             {
                 string line = reader.ReadLine();
@@ -27,7 +27,7 @@ namespace Tyuiu.VolkovNS.Sprint5.Task7.V8.Lib
 
                 }
             }
-            File.WriteAllText(path1, res);
+            File.WriteAllText(path1, Convert.ToString(res));
             return path1;
         }
     }
