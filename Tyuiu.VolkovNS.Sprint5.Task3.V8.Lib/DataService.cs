@@ -12,7 +12,7 @@ namespace Tyuiu.VolkovNS.Sprint5.Task3.V8.Lib
             bool fileExists = fileinfo.Exists;
             if (fileExists)
                 File.Delete(path);
-            double res = (x * x + 1) / (3 * x + 4);
+            double res = Math.Round((x * x + 1) / (3 * x + 4),3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
                 writer.Write(BitConverter.GetBytes(res));
