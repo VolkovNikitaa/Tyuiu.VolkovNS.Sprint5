@@ -8,7 +8,7 @@ namespace Tyuiu.VolkovNS.Sprint5.Task4.V5.Lib
         {
             string strX = File.ReadAllText(path);
             string strY = strX.Replace(".", ",");
-            double res = Math.Round(4.26 * Convert.ToDouble(strY) / Math.Sin(Convert.ToDouble(strY)), 3);
+            double res = Math.Round(4.26 * Convert.ToDouble(strY) / Math.Sin(Convert.ToDouble(strY)), 3); 
             return res;
         }
     }
