@@ -18,7 +18,7 @@ namespace Tyuiu.VolkovNS.Sprint5.Task1.V23.Lib
                 if (i == -2)
                     y = 0;
                 else 
-                    y = Math.Cos(i) + Math.Cos(i) / (i + 2) - 3 * i;
+                    y = Math.Round(Math.Cos(i) + Math.Cos(i) / (i + 2) - 3 * i,2);
                 strY = Convert.ToString(y);
                 if (i!=stopValue)
                     File.AppendAllText(path, strY + Environment.NewLine);
