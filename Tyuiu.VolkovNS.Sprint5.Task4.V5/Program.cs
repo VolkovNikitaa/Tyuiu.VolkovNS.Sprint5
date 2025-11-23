@@ -22,7 +22,6 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         string path = Path.Combine("c:\\", "DataSprint5\\", "InPutDataFileTask4V5.txt");
         double res = ds.LoadFromDataFile(path);
-        Console.WriteLine("Файл " + res);
-        Console.WriteLine("Создан!");
+        Console.WriteLine("Ответ: " + res);
     }
 }
